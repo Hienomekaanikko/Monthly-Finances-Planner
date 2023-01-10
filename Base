@@ -1,0 +1,202 @@
+import pandas
+print("This is your yearly income summary!")
+bills = {}
+#Phone
+print("Type the phone bill:")
+phoneBill = input()
+phoneBill = int(phoneBill)
+print("The average phonebill is " + str(phoneBill) + " €.")
+bills["Phone"] = phoneBill
+
+#Adding the Phone Bills to the dictionary
+bills.update({"Phone": phoneBill})
+print("Updated bills list.", bills)
+
+#Internet
+print("Type the internet bill:")
+internetBill = input()
+internetBill = int(internetBill)
+print("The average internetbill is " + str(internetBill) + " €.")
+bills["Internet"] = internetBill
+#Adding the Internet Bills to the dictionary
+bills.update({"Internet": internetBill})
+
+#Adding the Internet to the dictionary
+bills.update({"Internet": internetBill})
+print("Updated bills list.", bills)
+
+#Rent
+print("Type the rent bill:")
+rentBill = input()
+rentBill = int(rentBill)
+print("The average rent is " + str(rentBill) + " €.")
+bills["Rent"] = rentBill
+#Adding the Rent Bills to the dictionary
+bills.update({"Rent": rentBill})
+
+#Adding the Rent to the dictionary
+bills.update({"Rent": rentBill})
+print("Updated bills list.", bills)
+
+#Monthly payments
+print("Type the monthly payments combined:")
+monthlyBill = input()
+monthlyBill = int(monthlyBill)
+print("The average monthly payments are " + str(monthlyBill) + " €.")
+bills["MonthlyBill"] = monthlyBill
+#Adding the Monthly Payment Bills to the dictionary
+bills.update({"Monthly Bills": monthlyBill})
+
+#Adding the Monthly Payments to the dictionary
+bills.update({"Monthly Payments": monthlyBill})
+print("Updated bills list.", bills)
+
+#Bills combined
+billsCombined = sum(bills.values())
+print("Bills combined is " + str(billsCombined) + " €.")
+
+months = {}
+#January
+print("Type the net-salary of January:")
+Janincome = input()
+Janincome = int(Janincome)
+print("The income of January is " + str(Janincome) + " €.")
+months["January"] = Janincome
+
+#Adding the January Salary to the dictionary
+months.update({"January": Janincome})
+print("Updated month list.", months)
+
+#February
+print("Type the net-salary of February:")
+Febincome = input()
+Febincome = int(Febincome)
+print("The income of February is " + str(Febincome) + " €.")
+months["February"] = Febincome
+
+#Adding the February Salary to the dictionary
+months.update({"February": Febincome})
+print("Updated month list.", months)
+
+#March
+print("Type the net-salary of March:")
+Marincome = input()
+Marincome = int(Marincome)
+print("The income of March is " + str(Marincome) + " €.")
+months["March"] = Marincome
+
+#Adding the March Salary to the dictionary
+months.update({"March": Marincome})
+print("Updated month list.", months)
+
+#April
+print("Type the net-salary of April:")
+Aprincome = input()
+Aprincome = int(Aprincome)
+print("The income of April is " + str(Aprincome) + " €.")
+months["March"] = Marincome
+
+#Adding the April Salary to the dictionary
+months.update({"April": Aprincome})
+print("Updated month list.", months)
+
+#May
+print("Type the net-salary of May:")
+Mayincome = input()
+Mayincome = int(Mayincome)
+print("The income of May is " + str(Mayincome) + " €.")
+months["March"] = Marincome
+
+#Adding the May Salary to the dictionary
+months.update({"March": Mayincome})
+print("Updated month list.", months)
+
+#June
+print("Type the net-salary of June:")
+Junincome = input()
+Junincome = int(Junincome)
+print("The income of June is " + str(Junincome) + " €.")
+months["June"] = Junincome
+
+#Adding the June Salary to the dictionary
+months.update({"June": Junincome})
+print("Updated month list.", months)
+
+#July
+print("Type the net-salary of July:")
+Julincome = input()
+Julincome = int(Julincome)
+print("The income of July is " + str(Julincome) + " €.")
+months["July"] = Julincome
+
+#Adding the July Salary to the dictionary
+months.update({"July": Julincome})
+print("Updated month list.", months)
+
+#August
+print("Type the net-salary of August:")
+Augincome = input()
+Augincome = int(Augincome)
+print("The income of August is " + str(Augincome) + " €.")
+months["August"] = Augincome
+
+#Adding the August Salary to the dictionary
+months.update({"August": Augincome})
+print("Updated month list.", months)
+
+#September
+print("Type the net-salary of September:")
+Sepincome = input()
+Sepincome = int(Sepincome)
+print("The income of September is " + str(Sepincome) + " €.")
+months["March"] = Marincome
+
+#Adding the September Salary to the dictionary
+months.update({"September": Sepincome})
+print("Updated month list.", months)
+
+#October
+print("Type the net-salary of October:")
+Octincome = input()
+Octincome = int(Octincome)
+print("The income of October is " + str(Octincome) + " €.")
+months["October"] = Octincome
+
+#Adding the October Salary to the dictionary
+months.update({"October": Octincome})
+print("Updated month list.", months)
+
+#November
+print("Type the net-salary of November:")
+Novincome = input()
+Novincome = int(Novincome)
+print("The income of November is " + str(Novincome) + " €.")
+months["November"] = Novincome
+
+#Adding the November Salary to the dictionary
+months.update({"November": Novincome})
+print("Updated month list.", months)
+
+#December
+print("Type the net-salary of December:")
+Decincome = input()
+Decincome = int(Decincome)
+print("The income of December is " + str(Decincome) + " €.")
+months["December"] = Decincome
+
+#Adding the December Salary to the dictionary
+months.update({"December": Decincome})
+print("Updated month list.", months)
+
+Salariescombined = sum(months.values())
+print("Salaries combined is " + str(Salariescombined) + " €.")
+
+#Average income after taxes
+Averageincome = Salariescombined / 12
+print("Average net income is " + str(Averageincome) + " €.")
+
+#Average available money after bills
+print("Average bills per month is " + str(billsCombined) + " €.")
+print("Average available money after bills per month is " + str(Averageincome-billsCombined) + " €.")
+
+#Excel
